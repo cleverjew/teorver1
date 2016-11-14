@@ -1,0 +1,29 @@
+﻿<Window x:Class="teorver1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:teorver1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="338.38" Width="292.6">
+    <Grid>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="23,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="85,271,0,0" VerticalAlignment="Top" Width="109"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="202" Margin="23,69,0,0" VerticalAlignment="Top" Width="239" SelectionChanged="listBox_SelectionChanged">
+            <TextBlock Text="Что вычислить:"/>
+            <ListBoxItem>Выборочное среднее значение</ListBoxItem>
+            <ListBoxItem>Выборочная дисперсия</ListBoxItem>
+            <ListBoxItem Content="Стандартное отклонение"/>
+            <ListBoxItem>Медиана</ListBoxItem>
+            <ListBoxItem>Мода</ListBoxItem>
+            <ListBoxItem>Макимальное значение</ListBoxItem>
+            <ListBoxItem>Минимальное значение</ListBoxItem>
+            <ListBoxItem>Размах</ListBoxItem>
+            <ListBoxItem>Квантиль</ListBoxItem>
+        </ListBox>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="224,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="label" Content="Числа через запятую:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label x:Name="label2" Content="Квантиль:" HorizontalAlignment="Left" Margin="203,10,0,0" VerticalAlignment="Top" Width="85"/>
+
+    </Grid>
+</Window>
